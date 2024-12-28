@@ -10,7 +10,7 @@ float modulo(void);
 int main()
 {
     start:
-    cout << "---------------------- WELCOME TO OUR CALCULATOR APPLICATION -------------------------" << endl;
+    cout << "---------------------- WELCOME TO OUR SIMPLE CALCI -------------------------" << endl;
     cout << "*************************Please Follow The Instruction ******************************"<< endl;
     cout << "\t\t\t 1. Please Press 'A' for Addition " << endl;
     cout << "\t\t\t 2. Please Press 'S' for Subtraction " << endl;
@@ -27,15 +27,15 @@ int main()
     {
         int add = addition();
         cout << "\n\n\t\t Addition is : " << add << endl << endl;
-        cout << "\nDo You Want to use our Application Again (Y or N) ?" << endl;
+        cout << "\nDo You Want to use our Application Again (Yes or No) ?" << endl;
         cin >> again;
-        if(again == 'Y' || again == 'y') {
+        if(again == 'Yes' || again == 'yes') {
             goto start;
-        }else if(again == 'N' || again == 'n') {
+        }else if(again == 'No' || again == 'no') {
             cout << "\n\n\t\t********* Thank You to Using Application *************" << endl;
             cout << "\n\t\t Created By Parth " << endl;
         }else{
-            cout << "\n\t You have Entered Wrong Choice Please Enter (y or n)" << endl;
+            cout << "\n\t You have Entered Wrong Choice Please Enter (yes or no)" << endl;
             goto selectagain;
         }
     }
@@ -43,57 +43,57 @@ int main()
     {
         int mul = multification();
         cout << "\n\n\t\t Multification is : " << mul << endl << endl;
-        cout << "\nDo You Want to use our Application Again (Y or N) ?" << endl;
+        cout << "\nDo You Want to use our Application Again (Yes or No) ?" << endl;
         cin >> again;
-        if(again == 'Y' || again == 'y') {
+        if(again == 'Yes' || again == 'yes') {
             goto start;
-        }else if(again == 'N' || again == 'n') {
+        }else if(again == 'No' || again == 'no') {
             cout << "\n\n\t\t********* Thank You to Using Application *************" << endl;
             cout << "\n\t\t Created By Parth " << endl;
         }else{
-            cout << "\n\t You have Entered Wrong Choice Please Enter (y or n)" << endl;
+            cout << "\n\t You have Entered Wrong Choice Please Enter (yes or no)" << endl;
             goto selectagain;
         }
     }else if (value == 's' || value == 'S') {
         int sub = subtraction();
         cout << "\n\n\t\t Subtraction is : " << sub << endl << endl;
-        cout << "\nDo You Want to use our Application Again (Y or N) ?" << endl;
+        cout << "\nDo You Want to use our Application Again (Yes or No) ?" << endl;
         cin >> again;
-        if(again == 'Y' || again == 'y') {
+        if(again == 'Yes' || again == 'yes') {
             goto start;
-        }else if(again == 'N' || again == 'n') {
+        }else if(again == 'No' || again == 'no') {
             cout << "\n\n\t\t********* Thank You to Using Application *************" << endl;
             cout << "\n\t\t Created By Parth " << endl;
         }else{
-            cout << "\n\t You have Entered Wrong Choice Please Enter (y or n)" << endl;
+            cout << "\n\t You have Entered Wrong Choice Please Enter (yes or no)" << endl;
             goto selectagain;
         }
     }else if (value == 'd' || value == 'D') {
         float div = division();
         cout << "\n\n\t\t Division is : " << div << endl << endl;
-        cout << "\nDo You Want to use our Application Again (Y or N) ?" << endl;
+        cout << "\nDo You Want to use our Application Again (Yes or No) ?" << endl;
         cin >> again;
-        if(again == 'Y' || again == 'y') {
+        if(again == 'Yes' || again == 'yes') {
             goto start;
-        }else if(again == 'N' || again == 'n') {
+        }else if(again == 'No' || again == 'no') {
             cout << "\n\n\t\t********* Thank You to Using Application *************" << endl;
             cout << "\n\t\t Created By Parth " << endl;
         }else{
-            cout << "\n\t You have Entered Wrong Choice Please Enter (y or n)" << endl;
+            cout << "\n\t You have Entered Wrong Choice Please Enter (yes or no)" << endl;
             goto selectagain;
         }
     }else if (value == 'o' || value == 'O') {
         float mod = modulo();
         cout << "\n\n\t\t Modulo is : " << mod << endl << endl;
-        cout << "\nDo You Want to use our Application Again (Y or N) ?" << endl;
+        cout << "\nDo You Want to use our Application Again (Yes or No) ?" << endl;
         cin >> again;
-        if(again == 'Y' || again == 'y') {
+        if(again == 'Yes' || again == 'yes') {
             goto start;
-        }else if(again == 'N' || again == 'n') {
+        }else if(again == 'No' || again == 'no') {
             cout << "\n\n\t\t********* Thank You to Using Application *************" << endl;
             cout << "\n\t\t Created By Parth " << endl;
         }else{
-            cout << "\n\t You have Entered Wrong Choice Please Enter (y or n)" << endl;
+            cout << "\n\t You have Entered Wrong Choice Please Enter (yes or no)" << endl;
             goto selectagain;
         }
     }else if(value == 'E' || value == 'e' ) {
@@ -118,14 +118,14 @@ int addition() {
     cin >> a;
     total = total + a;
     selectagain:
-    cout << "\tDo you want to add more numbers, (Y or N) : ";
+    cout << "\tDo you want to add more numbers, (Yes or No) : ";
     cin >> ch;
-    if(ch == 'Y' || ch == 'y') {
+    if(ch == 'Yes' || ch == 'yes') {
         goto add;
-    }else if(ch == 'N' || ch == 'n') {
+    }else if(ch == 'No' || ch == 'no') {
         return total;
     }else{
-        cout << "\n\t You have Entered Wrong Choice Please Enter (y or n)" << endl;
+        cout << "\n\t You have Entered Wrong Choice Please Enter (yes or no)" << endl;
         goto selectagain;
     }
     return total;
@@ -154,14 +154,14 @@ int multification() {
     cin >> a;
     total = total * a;
     selectagain:
-    cout << "\tDo you want to multiply more numbers, (Y or N) : ";
+    cout << "\tDo you want to multiply more numbers, (Yes or No) : ";
     cin >> ch;
-    if(ch == 'Y' || ch == 'y') {
+    if(ch == 'Yes' || ch == 'yes') {
         goto mul;
-    }else if(ch == 'N' || ch == 'n') {
+    }else if(ch == 'No' || ch == 'no') {
         return total;
     }else{
-        cout << "\n\t You have Entered Wrong Choice Please Enter (y or n)" << endl;
+        cout << "\n\t You have Entered Wrong Choice Please Enter (yes or no)" << endl;
         goto selectagain;
     }
     return total;
